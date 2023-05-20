@@ -2,11 +2,20 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/.vs/CommonTools/v16/.suo
+# .NET Core
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
 /.vs
 /DaXiong.Tools/.vs/DaXiong.Tools/v16
-/DaXiong.Tools/DaXiong.Tools.Configuration/obj
-/DaXiong.Tools/DaXiong.Demo.WebApi/bin/Debug/net5.0
-/DaXiong.Tools/DaXiong.Demo.WebApi/obj
-/DaXiong.Tools/DaXiong.Tools.Configuration/bin/Debug
-/DaXiong.Tools/.vs/DaXiong.Tools/DesignTimeBuild/.dtbcache.v2
+/DaXiong.Tools/.vs/DaXiong.Tools/DesignTimeBuild
