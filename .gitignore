@@ -1,0 +1,11 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs/CommonTools/v16/.suo
+/.vs
+/DaXiong.Tools/.vs/DaXiong.Tools/v16
+/DaXiong.Tools/DaXiong.Tools.Configuration/obj
+/DaXiong.Tools/DaXiong.Demo.WebApi/bin/Debug/net5.0
+/DaXiong.Tools/DaXiong.Demo.WebApi/obj
+/DaXiong.Tools/DaXiong.Tools.Configuration/bin/Debug
