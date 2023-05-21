@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaXiong.Tools.Configuration", "DaXiong.Tools.Configuration\DaXiong.Tools.Configuration.csproj", "{2B7BD7D4-BC56-4E5F-8436-39C0DA037C5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaXiong.Tools.Configuration", "DaXiong.Tools.Configuration\DaXiong.Tools.Configuration.csproj", "{2B7BD7D4-BC56-4E5F-8436-39C0DA037C5E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{78530CC3-01E7-46E3-81FC-97BDCB327AE2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{EF95B65F-E67D-4CEA-834E-9DF3DD238785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaXiong.Demo.WebApi", "DaXiong.Demo.WebApi\DaXiong.Demo.WebApi.csproj", "{46BCCF3D-2719-45BC-A240-6EF5B08A9469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaXiong.Demo.WebApi", "DaXiong.Demo.WebApi\DaXiong.Demo.WebApi.csproj", "{46BCCF3D-2719-45BC-A240-6EF5B08A9469}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{0A45771B-0B8E-42B0-8EB5-CD4470754C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaXiong.Tools.Xunit", "DaXiong.Tools.Xunit\DaXiong.Tools.Xunit.csproj", "{A554B201-186A-4501-9ADF-8D329F395529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{46BCCF3D-2719-45BC-A240-6EF5B08A9469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46BCCF3D-2719-45BC-A240-6EF5B08A9469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46BCCF3D-2719-45BC-A240-6EF5B08A9469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A554B201-186A-4501-9ADF-8D329F395529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A554B201-186A-4501-9ADF-8D329F395529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A554B201-186A-4501-9ADF-8D329F395529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A554B201-186A-4501-9ADF-8D329F395529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2B7BD7D4-BC56-4E5F-8436-39C0DA037C5E} = {78530CC3-01E7-46E3-81FC-97BDCB327AE2}
 		{46BCCF3D-2719-45BC-A240-6EF5B08A9469} = {EF95B65F-E67D-4CEA-834E-9DF3DD238785}
+		{A554B201-186A-4501-9ADF-8D329F395529} = {0A45771B-0B8E-42B0-8EB5-CD4470754C2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {692D60C7-FD50-4991-90AD-898139778025}
