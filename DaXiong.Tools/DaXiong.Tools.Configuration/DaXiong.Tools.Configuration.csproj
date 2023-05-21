@@ -3,11 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>Tools.Configuration</RootNamespace>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>DaXiong</Authors>
     <Description>[工具集]对config读取,携程Apollo,Nacos等配置封装</Description>
     <PackageTags>config,apollo,nacos</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <projectUrl>https://github.com/lgxlsm/CommonTools/tree/main/DaXiong.Tools/DaXiong.Tools.Configuration</projectUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,4 +18,11 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
