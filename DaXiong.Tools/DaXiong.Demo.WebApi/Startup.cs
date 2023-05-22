@@ -1,7 +1,9 @@
+using DaXiong.Demo.WebApi.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -19,6 +21,11 @@ namespace DaXiong.Demo.WebApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            ConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
+            configurationBuilder.SetBasePath(Environment.CurrentDirectory).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            configurationBuilder.AddConfigurationFolder();
+            var aaa = Configuration.GetSection("aaa").Value;
+            var AppSecret = Configuration.GetSection("AppConfig:AppSecret").Value;
         }
 
         public IConfiguration Configuration { get; }
@@ -26,7 +33,7 @@ namespace DaXiong.Demo.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            var AppSecret = Configuration.GetSection(nameof(AppConfig)).GetSection(nameof(AppConfig.AppSecret)).Value;
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
