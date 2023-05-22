@@ -24,8 +24,9 @@ namespace DaXiong.Demo.WebApi
             ConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
             configurationBuilder.SetBasePath(Environment.CurrentDirectory).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             configurationBuilder.AddConfigurationFolder();
+            Configuration = configurationBuilder.Build();
             var aaa = Configuration.GetSection("aaa").Value;
-            var AppSecret = Configuration.GetSection("AppConfig:AppSecret").Value;
+            var appSecret = Configuration.GetSection("AppConfig")["AppSecret"];
         }
 
         public IConfiguration Configuration { get; }
