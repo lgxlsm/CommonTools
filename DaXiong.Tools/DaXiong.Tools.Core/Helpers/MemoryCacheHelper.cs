@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 using System;
 
-namespace DaXiong.Tools.Core
+namespace DaXiong.Tools.Core.Helpers
 {
     public class MemoryCacheHelper
     {
