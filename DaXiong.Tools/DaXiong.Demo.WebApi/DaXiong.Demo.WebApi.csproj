@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DaXiong.Tools.Configuration\DaXiong.Tools.Configuration.csproj" />
+    <ProjectReference Include="..\DaXiong.Tools.Middleware\DaXiong.Tools.Middleware.csproj" />
   </ItemGroup>
 
 </Project>

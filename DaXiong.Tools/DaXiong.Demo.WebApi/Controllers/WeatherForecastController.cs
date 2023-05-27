@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DaXiong.Demo.WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -26,6 +26,7 @@ namespace DaXiong.Demo.WebApi.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            throw new NullReferenceException();
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -34,6 +35,14 @@ namespace DaXiong.Demo.WebApi.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Test(string id)
+        {
+            throw new NullReferenceException();
+            return new BadRequestObjectResult("系统繁忙，请稍后再试");
         }
     }
 }

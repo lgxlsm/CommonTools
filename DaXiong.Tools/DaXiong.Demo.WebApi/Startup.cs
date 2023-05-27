@@ -3,15 +3,19 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace DaXiong.Demo.WebApi
@@ -35,11 +39,13 @@ namespace DaXiong.Demo.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             var AppSecret = Configuration.GetSection(nameof(AppConfig)).GetSection(nameof(AppConfig.AppSecret)).Value;
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DaXiong.Demo.WebApi", Version = "v1" });
             });
+            services.AddException();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,4 +70,5 @@ namespace DaXiong.Demo.WebApi
             });
         }
     }
+
 }

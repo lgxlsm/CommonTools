@@ -10,14 +10,14 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddTimeMonitor(this IServiceCollection services, Action<TimeMonitorOption> configure = null)
         {
-            //services.AddOptions<TimeMonitorOption>();
+            services.AddOptions<TimeMonitorOption>();
 
-            //services.PostConfigure<TimeMonitorOption>(x =>
-            //{
-            //    configure?.Invoke(x);
-            //});
+            services.PostConfigure<TimeMonitorOption>(x =>
+            {
+                configure?.Invoke(x);
+            });
 
-            //services.AddBuffering();
+            services.AddBuffering();
 
             return services.AddSingleton<IStartupFilter, TimeMonitorStartupFilter>();
         }
