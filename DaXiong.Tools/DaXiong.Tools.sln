@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaXiong.Tools.Xunit", "DaXi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaXiong.Tools.Middleware", "DaXiong.Tools.Middleware\DaXiong.Tools.Middleware.csproj", "{7E9E44BD-1A08-4AE3-B738-386310F6B14A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaXiong.Tools.Core", "DaXiong.Tools.Core\DaXiong.Tools.Core.csproj", "{44C6C6DB-5A8E-4A26-A396-18CD977A739A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaXiong.Tools.Core", "DaXiong.Tools.Core\DaXiong.Tools.Core.csproj", "{44C6C6DB-5A8E-4A26-A396-18CD977A739A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
