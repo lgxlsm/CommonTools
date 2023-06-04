@@ -67,7 +67,6 @@ namespace DaXiong.Demo.WebApi
                 {
                     errorApp.Run(async context =>
                     {
-                        Console.WriteLine();
                         // 处理异常并生成响应
                         var exception = context.Features.Get<IExceptionHandlerPathFeature>().Error;
                         var statusCode = (int)HttpStatusCode.InternalServerError;
