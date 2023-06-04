@@ -30,7 +30,7 @@ namespace DaXiong.Tools.Middleware.Exceptions
             catch (Exception ex)
             {
                 var parameters = context.GetHttpParameters();
-                var requestInfo = string.Format("[URL]:{0}-[Parameters]:{1}-[Begin]:{2}", context.Request.Path, parameters, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                var requestInfo = $"ExceptionMiddleware[URL]:{context.Request.Path}-[Parameters]:{parameters}-[Begin]:{DateTime.Now:yyyy-MM-dd HH:mm:ss.fff}";
 
                 _logger.LogError(ex, requestInfo);
                 context.Response.ContentType = "application/json; charset=utf-8";
