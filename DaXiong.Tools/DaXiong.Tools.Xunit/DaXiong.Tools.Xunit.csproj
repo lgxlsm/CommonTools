@@ -19,4 +19,14 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DaXiong.Tools.Configuration\DaXiong.Tools.Configuration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configuration\app.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

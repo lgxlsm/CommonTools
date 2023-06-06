@@ -31,7 +31,6 @@ namespace DaXiong.Demo.WebApi
             configurationBuilder.SetBasePath(Environment.CurrentDirectory).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             configurationBuilder.AddConfigurationFolder();
             Configuration = configurationBuilder.Build();
-            var aaa = Configuration.GetSection("aaa").Value;
             var appSecret = Configuration.GetSection("AppConfig")["AppSecret"];
         }
 
