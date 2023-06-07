@@ -40,7 +40,7 @@ namespace DaXiong.Demo.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             var AppSecret = Configuration.GetSection(nameof(AppConfig)).GetSection(nameof(AppConfig.AppSecret)).Value;
-
+            services.AddMemoryCache();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

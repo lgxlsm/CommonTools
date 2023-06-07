@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DaXiong.Tools.Configuration\DaXiong.Tools.Configuration.csproj" />
+    <ProjectReference Include="..\DaXiong.Tools.Core\DaXiong.Tools.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

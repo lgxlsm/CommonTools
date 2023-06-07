@@ -4,10 +4,10 @@ using Xunit;
 
 namespace DaXiong.Tools.Xunit
 {
-    public class Configuration
+    public class Configuration_Test
     {
         IConfiguration configuration;
-        public Configuration()
+        public Configuration_Test()
         {
             ConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
             configurationBuilder.AddConfigurationFolder();
