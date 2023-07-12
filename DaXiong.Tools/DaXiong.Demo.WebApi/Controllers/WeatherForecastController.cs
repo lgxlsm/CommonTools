@@ -45,6 +45,8 @@ namespace DaXiong.Demo.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> Test(string id)
         {
+
+
             _cache.Set("key", "value");
             var cc = _cache.Get("key");
             //绝对过期时间
